@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".services.MyApp"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SlapRun"
+        tools:targetApi="31">
+        <activity
+            android:name=".WatchEarnDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlayEarnWebviewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlayEarnDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ScreenShotTaskDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EarningWallDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GamePointActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlayEarnTaskListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EarningWallTaskListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ScreenShotTaskListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ScreenShotActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EarningWallActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlayEarnActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ReferActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OCRTaskDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OCRTaskActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BonusActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WithdrawalHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Withdrawal_OptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WithdrawalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OffersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginRegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".services.MusicService" />
+    </application>
+
+</manifest>

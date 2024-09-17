@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OffersActivity"
+    android:background="@drawable/bg">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:scrollbars="none"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/_10sdp">
+            <ImageView
+                android:id="@+id/iv_logo"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_180sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:src="@drawable/logo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <ImageView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:elevation="1dp"
+                android:src="@drawable/logo"
+                app:layout_constraintTop_toBottomOf="@id/ll_pubscal"
+                app:layout_constraintBottom_toTopOf="@+id/ll_pubscal"
+                app:layout_constraintStart_toStartOf="@+id/ll_pubscal"
+                app:layout_constraintTop_toTopOf="@+id/ll_pubscal" />
+            <LinearLayout
+                android:id="@+id/ll_pubscal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_60sdp"
+                android:background="@drawable/profile_item_bg"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintTop_toBottomOf="@+id/iv_logo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/poubscal"
+                    android:padding="@dimen/_17sdp"/>
+            </LinearLayout>
+            <ImageView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:elevation="1dp"
+                android:src="@drawable/logo"
+                app:layout_constraintBottom_toTopOf="@+id/ll_earningIo"
+                app:layout_constraintStart_toStartOf="@+id/ll_earningIo"
+                app:layout_constraintTop_toTopOf="@+id/ll_earningIo" />
+            <LinearLayout
+                android:id="@+id/ll_earningIo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_60sdp"
+                android:background="@drawable/profile_item_bg"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_15sdp"
+                app:layout_constraintTop_toBottomOf="@id/ll_pubscal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/earning"
+                    android:padding="@dimen/_14sdp"/>
+            </LinearLayout>
+            <ImageView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:elevation="1dp"
+                android:src="@drawable/logo"
+                app:layout_constraintBottom_toTopOf="@+id/ll_playearn"
+                app:layout_constraintStart_toStartOf="@+id/ll_playearn"
+                app:layout_constraintTop_toTopOf="@+id/ll_playearn" />
+            <LinearLayout
+                android:id="@+id/ll_playearn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_60sdp"
+                android:background="@drawable/profile_item_bg"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_15sdp"
+                app:layout_constraintTop_toBottomOf="@id/ll_earningIo">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/playearn"
+                    android:padding="@dimen/_8sdp"/>
+            </LinearLayout>
+            <ImageView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:elevation="1dp"
+                android:src="@drawable/logo"
+                app:layout_constraintBottom_toTopOf="@+id/ll_earningWall"
+                app:layout_constraintStart_toStartOf="@+id/ll_earningWall"
+                app:layout_constraintTop_toTopOf="@+id/ll_earningWall" />
+            <LinearLayout
+                android:id="@+id/ll_earningWall"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_60sdp"
+                android:background="@drawable/profile_item_bg"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_15sdp"
+                app:layout_constraintTop_toBottomOf="@id/ll_playearn">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/earningwall"
+                    android:padding="@dimen/_3sdp"/>
+            </LinearLayout>
+            <ImageView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:elevation="1dp"
+                android:src="@drawable/logo"
+                app:layout_constraintBottom_toTopOf="@+id/ll_screenShort"
+                app:layout_constraintStart_toStartOf="@+id/ll_screenShort"
+                app:layout_constraintTop_toTopOf="@+id/ll_screenShort" />
+            <LinearLayout
+                android:id="@+id/ll_screenShort"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_60sdp"
+                android:background="@drawable/profile_item_bg"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_15sdp"
+                app:layout_constraintTop_toBottomOf="@id/ll_earningWall">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/screenshot"
+                    android:padding="@dimen/_7sdp"/>
+            </LinearLayout>
+            <ImageView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:elevation="1dp"
+                android:visibility="gone"
+                android:src="@drawable/logo"
+                app:layout_constraintBottom_toTopOf="@+id/ll_adjump"
+                app:layout_constraintStart_toStartOf="@+id/ll_adjump"
+                app:layout_constraintTop_toTopOf="@+id/ll_adjump" />
+            <LinearLayout
+                android:id="@+id/ll_adjump"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_60sdp"
+                android:background="@drawable/profile_item_bg"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/_15sdp"
+                app:layout_constraintTop_toBottomOf="@id/ll_screenShort">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/adjump"
+                    android:padding="@dimen/_8sdp"/>
+            </LinearLayout>
+            <ImageView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:elevation="1dp"
+                android:src="@drawable/logo"
+                app:layout_constraintBottom_toTopOf="@+id/ll_timewall"
+                app:layout_constraintStart_toStartOf="@+id/ll_timewall"
+                app:layout_constraintTop_toTopOf="@+id/ll_timewall" />
+            <LinearLayout
+                android:id="@+id/ll_timewall"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_60sdp"
+                android:background="@drawable/profile_item_bg"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_15sdp"
+                app:layout_constraintTop_toBottomOf="@id/ll_adjump">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/timewall"
+                    android:padding="@dimen/_10sdp"/>
+            </LinearLayout>
+            <ImageView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:elevation="1dp"
+                android:src="@drawable/logo"
+                app:layout_constraintBottom_toTopOf="@+id/ll_adgate"
+                app:layout_constraintStart_toStartOf="@+id/ll_adgate"
+                app:layout_constraintTop_toTopOf="@+id/ll_adgate" />
+            <LinearLayout
+                android:id="@+id/ll_adgate"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_60sdp"
+                android:background="@drawable/profile_item_bg"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_15sdp"
+                app:layout_constraintTop_toBottomOf="@id/ll_timewall">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/adgatemedia"
+                    android:padding="@dimen/_7sdp"/>
+            </LinearLayout>
+            <ImageView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:elevation="1dp"
+                android:src="@drawable/logo"
+                app:layout_constraintBottom_toTopOf="@+id/ll_lootably"
+                app:layout_constraintStart_toStartOf="@+id/ll_lootably"
+                app:layout_constraintTop_toTopOf="@+id/ll_lootably" />
+            <LinearLayout
+                android:id="@+id/ll_lootably"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_60sdp"
+                android:background="@drawable/profile_item_bg"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_15sdp"
+                app:layout_constraintTop_toBottomOf="@id/ll_adgate">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/lootably"
+                    android:padding="@dimen/_7sdp"/>
+            </LinearLayout>
+            <ImageView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:elevation="1dp"
+                android:src="@drawable/logo"
+                app:layout_constraintBottom_toTopOf="@+id/ll_farly"
+                app:layout_constraintStart_toStartOf="@+id/ll_farly"
+                app:layout_constraintTop_toTopOf="@+id/ll_farly" />
+            <LinearLayout
+                android:id="@+id/ll_farly"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_60sdp"
+                android:background="@drawable/profile_item_bg"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_15sdp"
+                app:layout_constraintTop_toBottomOf="@id/ll_lootably">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/farly"
+                    android:padding="@dimen/_17sdp"/>
+            </LinearLayout>
+            <ImageView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:elevation="1dp"
+                android:src="@drawable/logo"
+                app:layout_constraintBottom_toTopOf="@+id/ll_ayetstdio"
+                app:layout_constraintStart_toStartOf="@+id/ll_ayetstdio"
+                app:layout_constraintTop_toTopOf="@+id/ll_ayetstdio" />
+            <LinearLayout
+                android:id="@+id/ll_ayetstdio"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_60sdp"
+                android:background="@drawable/profile_item_bg"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_15sdp"
+                app:layout_constraintTop_toBottomOf="@id/ll_farly">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ayetstud"
+                    android:padding="@dimen/_7sdp"/>
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
